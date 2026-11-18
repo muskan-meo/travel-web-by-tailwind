@@ -1,0 +1,422 @@
+
+
+ /*  GLOBAL CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* TRAVEL HERO */
+
+.travel-hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 35, 20, 0.65),
+        rgba(0, 25, 15, 0.55)),
+        url("./greenbg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+
+.travel-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.travel-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.travel-logo span {
+    color: #16a34a;
+}
+
+.travel-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.travel-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.travel-links a:hover {
+    color:#14532d;
+}
+
+.nav-btn {
+    background: #16a34a;
+    color: white;
+    text-decoration: none;
+    padding: 11px 23px;
+    border-radius: 8px;
+}
+
+/* HERO CONTENT */
+
+.travel-content {
+    max-width: 950px;
+    margin: auto 0;
+    padding: 65px 0 100px;
+}
+
+.hero-tag {
+    color: #16a34a;
+    font-size: 15px;
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+
+.travel-content h1 {
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 20px 0;
+    color: white;
+}
+
+.travel-content h1 span {
+    display: block;
+    color: #16a34a;
+}
+
+.travel-content p {
+    max-width: 650px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #e2e8f0;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.primary-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.secondary-btn {
+    border: 1px solid white;
+    color: white;
+}
+
+/* SEARCH BOX */
+
+.travel-search {
+    background: white;
+    color: #1e293b;
+    padding: 20px;
+    border-radius: 14px;
+    display: flex;
+    align-items: end;
+    gap: 15px;
+    margin-top: 45px;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.search-item {
+    flex: 1;
+}
+
+.search-item label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.search-item input,
+.search-item select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    color: #475569;
+}
+
+.search-btn {
+    background: #14532d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .travel-navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .travel-links {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .travel-links a {
+        font-size: 12px;
+    }
+
+    .travel-content {
+        padding: 65px 0;
+    }
+
+    .travel-search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-item {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .travel-hero {
+        padding: 0 5%;
+    }
+
+    .travel-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+}
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    background-image: url("./greenbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+}
+
+/* =================================
+   DESTINATION GALLERY
+================================= */
+
+.gallery-section {
+    padding: 60px 6%;
+    background: #f5f8f6;
+    background-color:rgb(247, 244, 244);
+}
+
+/* Heading */
+
+.gallery-section .gallery-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-section .gallery-heading h1 {
+    font-size: 40px;
+    color: #14532d;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.gallery-section .gallery-heading p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* Grid */
+
+.gallery-section .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Cards */
+
+.gallery-section .gallery-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-section .gallery-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.13);
+}
+
+/* Images */
+
+.gallery-section .image-box {
+    height: 210px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-section .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-section .gallery-card:hover .image-box img {
+    transform: scale(1.1);
+}
+
+/* Badge */
+
+.gallery-section .popular {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background:  #14532d;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+/* Card Content */
+
+.gallery-section .gallery-info {
+    padding: 18px;
+}
+
+.gallery-section .location {
+    color:  #14532d;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.gallery-section .gallery-info h2 {
+    font-size: 19px;
+    color: #1e293b;
+    margin: 8px 0;
+}
+
+.gallery-section .gallery-info p {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+/* Price */
+
+.gallery-section .card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.gallery-section .price {
+    color:  #14532d;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.gallery-section .price small {
+    display: block;
+    color: #94a3b8;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+/* Explore Button */
+
+.gallery-section .explore-btn {
+    text-decoration: none;
+    background: #14532d;
+    color: white;
+    padding: 9px 13px;
+    border-radius: 8px;
+    font-size: 12px;
+    transition: background 0.3s ease;
+}
+
+.gallery-section .explore-btn:hover {
+    background:#14532d;
+}
+
+  /*  RESPONSIVE DESIGN  */
+
+@media (max-width: 1000px) {
+    .gallery-section .gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 750px) {
+    .gallery-section .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gallery-section .gallery-heading h1 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery-section {
+        padding: 35px 5%;
+    }
+
+    .gallery-section .gallery {
+        grid-template-columns: 1fr;
+    }
+}
